@@ -1,0 +1,53 @@
+.root {
+    position: absolute;
+    top: 120px;
+    display: flex;
+    background-color: #1b1d22;
+    width: 100%;
+    left: 0;
+    padding: 0 40px;
+    left: -100%;
+    transition: 0.3s;
+}
+
+.root.active {
+    left: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .root {
+        left: unset;
+        position: relative;
+        top: unset;
+    }
+}
+
+.input {
+    padding-left: 44px;
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .input {
+        max-width: 600px;
+    }
+}
+
+.container {
+    position: relative;
+    display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.icon {
+    position: absolute;
+    width: 24px;
+    left: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+}

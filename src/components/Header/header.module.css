@@ -1,0 +1,15 @@
+.root {
+    display: grid;
+    gap: 30px;
+    padding: 40px 0;
+    align-items: center;
+    grid-row: 1;
+    grid-template-columns: 1fr auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .root {
+        grid-template-columns: auto 1fr;
+        grid-column: 1 / span 2;
+    }
+}

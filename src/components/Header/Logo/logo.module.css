@@ -1,0 +1,10 @@
+.root {
+    width: 16rem;
+    height: auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .root {
+        width: 30rem;
+    }
+}
